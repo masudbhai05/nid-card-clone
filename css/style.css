@@ -1,0 +1,113 @@
+/* common */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* this is a variable  */
+:root{
+    --bg-color: #ededed;
+    --main-color : #187adc;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color:var(--bg-color);
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.front-back-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.front-form, .back-form{
+    width: 400px;
+    height: 630px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+.front-title, .back-title{
+    color: var(--main-color);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.front-side, .back-side{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+.front-form input, .back-form input{
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+.input-image{
+    display: flex;
+    justify-content: space-between;
+    margin: -6px;
+    padding: 0;
+    /* width: 100%; */
+}
+.input-image input{
+    width: 100%;
+    
+}
+.input-image span{
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.add-image{
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+input[type="file"]{
+    display: none;
+}
+
+
+/* this is a back side style  */
+#address{
+    resize: none;
+    border-radius: 5px;
+    border: 2px solid #e3e3e3;
+    margin-top: 10px;
+    padding: 12px;
+}
+#optional-check{
+    display: flex;
+    align-items: center;
+}
+.optional{
+    font-size: 13px;
+    margin-left: 10px;
+}
+hr {
+    border-top: 2px solid #c1c1c1;
+    transform: rotate(180deg);
+    width: 100%;
+  }
+  #create{
+    margin: 30px 20px;
+    padding: 10px;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: #fff;
+  }
