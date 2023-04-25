@@ -201,6 +201,7 @@ hr {
 #english-name{
     font-size: 13px;
     margin-left: 4px;
+    font-weight: 500;
 }
 .bangla-mane-text{
     font-family: var(--bangla-font);
