@@ -15,66 +15,113 @@
     </header>
 
     <main>
-        <div class="container">
-            <div class="front-back-container">
-                <div class="front-form">
-                    <h3 class="front-title">Front side</h3>
-                    <form class="front-side">
-                        <input type="text" placeholder="আপনার সম্পূর্ণ নাম লিখুন">
-                        <input type="text" placeholder="Your Full Name">
-                        <span>
-                            <label for="father"> পিতা</label>
-                            <input type="radio" name="guardian" id="father" value="পিতা">
-                            <label for="husband"> স্বামী</label>
-                            <input type="radio" name="guardian" id="husband" value="স্বামী ">
-                        </span>
-                        <input type="text" placeholder="আপনার স্বামী/পিতার নাম লিখুন">
-                        <input type="text" placeholder="আপনার মাতার নাম লিখুন">
-                        <input type="text" placeholder="Date of birth">
-                        <input type="text" placeholder="ID NO">
-                        <div class="input-image">
+        <section class="container-section">
+            <div class="container">
+                <div class="front-back-container">
+                    <div class="front-form">
+                        <h3 class="front-title">Front side</h3>
+                        <form class="front-side">
+                            <input type="text" placeholder="আপনার সম্পূর্ণ নাম লিখুন">
+                            <input type="text" placeholder="Your Full Name">
                             <span>
-                                <label for="add-photo" class="add-image">+Add Photo</label>
-                                <input type="file" name="" id="add-photo">
+                                <label for="father"> পিতা</label>
+                                <input type="radio" name="guardian" id="father" value="পিতা">
+                                <label for="husband"> স্বামী</label>
+                                <input type="radio" name="guardian" id="husband" value="স্বামী ">
                             </span>
-                            <span>
-                                <label for="add-signature" class="add-image">+Add Signature</label>
-                                <input type="file" name="" id="add-signature">
+                            <input type="text" placeholder="আপনার স্বামী/পিতার নাম লিখুন">
+                            <input type="text" placeholder="আপনার মাতার নাম লিখুন">
+                            <input type="text" placeholder="Date of birth">
+                            <input type="text" placeholder="ID NO">
+                            <div class="input-image">
+                                <span>
+                                    <label for="add-photo" class="add-image">+Add Photo</label>
+                                    <input type="file" name="" id="add-photo">
+                                </span>
+                                <span>
+                                    <label for="add-signature" class="add-image">+Add Signature</label>
+                                    <input type="file" name="" id="add-signature">
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="back-form">
+                        <h3 class="back-title">Back side</h3>
+                        <form class="back-side">
+                            <textarea name="" id="address" cols="30" rows="4"
+                                placeholder="আপনার সম্পূর্ণ ঠিকানা লিখুন"></textarea>
+                            <hr>
+                            <input type="text" placeholder="রক্তের গ্রুপ / Blood Group লিখুন">
+                            <input type="text" placeholder="আপনার জন্মস্থান লিখুন">
+                            <input type="text" placeholder="মুদ্রণ লিখুন">
+                            <span id="optional-check">
+                                <input type="checkbox" id="optional">
+                                <label for="optional" class="optional"> Hide this section (Optional)</label>
                             </span>
-                        </div>
-                    </form>
+                            <hr>
+                            <input type="text" placeholder="Date of birth">
+                            <input type="text" placeholder="ID NO">
+                            <div class="input-image">
+                                <span>
+                                    <label for="add-signature" class="add-image">+Add Signature</label>
+                                    <input type="file" name="" id="add-signature">
+                                </span>
+                                <span>
+                                    <label for="add-photo" class="add-image">+Add Barcode</label>
+                                    <input type="file" name="" id="add-photo">
+                                </span>
+                            </div>
+                        </form>
+                        <button id="create">CREATE</button>
+                    </div>
                 </div>
-                <div class="back-form">
-                    <h3 class="back-title">Back side</h3>
-                    <form class="back-side">
-                        <textarea name="" id="address" cols="30" rows="4"
-                            placeholder="আপনার সম্পূর্ণ ঠিকানা লিখুন"></textarea>
-                        <hr>
-                        <input type="text" placeholder="রক্তের গ্রুপ / Blood Group লিখুন">
-                        <input type="text" placeholder="আপনার জন্মস্থান লিখুন">
-                        <input type="text" placeholder="মুদ্রণ লিখুন">
-                        <span id="optional-check">
-                            <input type="checkbox" id="optional">
-                        <label for="optional" class="optional"> Hide this section (Optional)</label>
-                        </span>
-                        <hr>
-                        <input type="text" placeholder="Date of birth"> 
-                        <input type="text" placeholder="ID NO">
-                        <div class="input-image">
-                            <span>
-                                <label for="add-signature" class="add-image">+Add Signature</label>
-                                <input type="file" name="" id="add-signature">
-                            </span>
-                            <span>
-                                <label for="add-photo" class="add-image">+Add Barcode</label>
-                                <input type="file" name="" id="add-photo">
-                            </span>
+            </div>
+        </section>
+
+        <!-- this is an NID card section  -->
+        <div class="nid-container">
+            <div class="nid-card">
+                <!-- this is a front side  -->
+                <div class="nid-front">
+                    <div class="nid-header">
+                        <div class="map">
+                            <img src="images/Map2.png" alt="">
                         </div>
-                    </form>
-                    <button id="create">CREATE</button>
+                        <div class="header-text">
+                            <h1 class="bd-gov">গণপ্রজাতন্ত্রী বাংলাদেশ সরকার</h1>
+                            <p class="republic">Government of the People's Republic of Bangladesh</p>
+                            <p><span class="nation-id">National ID Card</span><span class="nation-id-bangla"> / জাতীয়
+                                    পরিচয়
+                                    পত্র</span></p>
+                        </div>
+                    </div>
+                    <!-- header end -->
+                    <div class="nid-body">
+                        <div class="images">
+                            <img src="images/profile.jpg" alt="" id="profile-photo">
+                            <img src="images/signature.png" alt="" id="signature-photo">
+                        </div>
+                        <div class="nid-information">
+                            <p><span class="bangla-mane-text" id="name-text">নাম: </span> <span id="bangla-name"
+                                    class="bangla-mane-text">মাসুদ আলী</span></p>
+                            <p><span>Name: </span> <span id="english-name">MD MASUD ALI</span></p>
+                            <p><span class="bangla-mane-text">পিতা: </span> <span id="father-name"
+                                    class="bangla-mane-text">তফিজ উদ্দিন মণ্ডল</span></p>
+                            <p><span class="bangla-mane-text">মাতা: </span> <span id="mother-name"
+                                    class="bangla-mane-text">হালিমা বেগম</span></p>
+                            <p><span>Date of Birth: </span> <span id="date-of-birth">10 Oct 2002</span></p>
+                            <p><span>ID NO: </span> <span id="id-no">4211358082</span></p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- this is a back side  -->
+                <div class="nid-back">
+
                 </div>
             </div>
         </div>
+
     </main>
 </body>
 

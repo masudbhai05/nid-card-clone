@@ -1,22 +1,28 @@
 /* common */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 
 /* this is a variable  */
 :root{
-    --bg-color: #ededed;
-    --main-color : #187adc;
+    --bg-color: #b5d5ee;
+    --main-color : #166fc8;
+    --bangla-font : 'Tiro Bangla', serif;
+    --english-font :  'Roboto', sans-serif;
 }
 
 body{
     margin: 0;
     padding: 0;
-    height: 100vh;
-    background-color:var(--bg-color);
-    font-family: 'Poppins', sans-serif;
+}
+.container-section{
+    display: none;
 }
 .container{
-
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-color:var(--bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,3 +117,100 @@ hr {
     background-color: var(--main-color);
     color: #fff;
   }
+
+  /* this is a nid card section  */
+
+  .nid-front{
+    width: 321.53px;
+    height: 202.02px;
+    /* background-color: #166fc8; */
+    border: 1px solid #000;
+    background-image: url("/images/flower5.png");
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: 56% 71%;
+  }
+  .nid-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4px;
+    border-bottom: 1px solid #000000;;
+  }
+  .map img{
+    width: 30px;
+  }
+
+.bd-gov{
+    font-family: var(--bangla-font);
+    font-size: 15px;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+.header-text{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.header-text p{
+    font-family: var(--english-font);
+    font-size: 12px;
+    margin: 2px 0px;
+}
+.republic{
+    color: #0AA047;
+}
+.nation-id{
+    color: red;
+}
+.nation-id-bangla{
+    font-family: var(--bangla-font);
+}
+.nid-body{
+    margin: 5px;
+    display: flex;
+}
+.images{
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-photo{
+    width: 60px;
+}
+#signature-photo{
+    width: 40px;
+    margin: 0 auto;
+}
+
+.nid-information{
+    margin-left: 8px;
+}
+.nid-information p{
+    margin: 0 8px 5px;
+    font-size: 12px;
+    font-family: var(--english-font);
+}
+#name-text{
+    font-size: 14px;
+}
+#bangla-name{
+    font-size: 14px;
+    margin-left: 15px;
+}
+#english-name{
+    font-size: 13px;
+    margin-left: 4px;
+}
+.bangla-mane-text{
+    font-family: var(--bangla-font);
+}
+#father-name{
+    margin-left: 15px;
+}
+#mother-name{
+    margin-left: 15px;
+}
+#id-no, #date-of-birth{
+    color: red;
+}
