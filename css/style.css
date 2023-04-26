@@ -1,14 +1,15 @@
 /* common */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap');
 
 
 /* this is a variable  */
 :root{
     --bg-color: #b5d5ee;
     --main-color : #166fc8;
-    --bangla-font : 'Tiro Bangla', serif;
+    /* --bangla-font : 'Tiro Bangla', serif; */
+    --bangla-font : 'Linotype Bengali';
     --english-font :  'Roboto', sans-serif;
 }
 
@@ -119,16 +120,19 @@ hr {
   }
 
   /* this is a nid card section  */
+  .nid-container{
+    margin: 50px;
+  }
 
   .nid-front{
-    width: 321.53px;
-    height: 202.02px;
+    width: 317.53px;
+    height: 198.02px;
     /* background-color: #166fc8; */
     border: 1px solid #000;
     background-image: url("../images/flowers.png");
     background-repeat: no-repeat;
     background-size: 35%;
-    background-position: 56% 71%;
+    background-position: 61% 77%;
   }
   .nid-header{
     display: flex;
@@ -143,6 +147,7 @@ hr {
 
 .bd-gov{
     font-family: var(--bangla-font);
+    font-weight: 700;
     font-size: 15px;
     margin-top: 4px;
     margin-bottom: 0;
@@ -176,7 +181,7 @@ hr {
 }
 
 #profile-photo{
-    width: 60px;
+    width: 72px;
 }
 #signature-photo{
     width: 40px;
@@ -192,26 +197,35 @@ hr {
     font-family: var(--english-font);
 }
 #name-text{
-    font-size: 14px;
+    font-size: 17px;
 }
 #bangla-name{
-    font-size: 14px;
-    margin-left: 15px;
+    font-size: 18px;
+    margin-left: 17px;
+    font-family: 'Linotype Bengali';
+    font-weight: 600;
 }
 #english-name{
-    font-size: 13px;
-    margin-left: 4px;
+    font-size: 12px;
+    margin-left: 14px;
     font-weight: 500;
+}
+#own-name{
+    font-size: 9px;
 }
 .bangla-mane-text{
     font-family: var(--bangla-font);
 }
 #father-name{
-    margin-left: 15px;
+    margin-left: 20px;
 }
 #mother-name{
-    margin-left: 15px;
+    margin-left: 21px;
 }
 #id-no, #date-of-birth{
     color: red;
+}
+#id-no{
+    font-weight: 600;
+    margin-left: 6px;
 }
