@@ -132,7 +132,7 @@ hr {
     background-image: url("../images/flowers.png");
     background-repeat: no-repeat;
     background-size: 35%;
-    background-position: 61% 77%;
+    background-position: 57% 73%;
   }
   .nid-header{
     display: flex;
@@ -178,6 +178,7 @@ hr {
 .images{
     display: flex;
     flex-direction: column;
+    margin-top: 1px;
 }
 
 #profile-photo{
@@ -189,10 +190,11 @@ hr {
 }
 
 .nid-information{
-    margin-left: 8px;
+    margin-left: 3px;
+    margin-top: -5px;
 }
 .nid-information p{
-    margin: 0 8px 5px;
+    margin: 0 8px 6px;
     font-size: 12px;
     font-family: var(--english-font);
 }
